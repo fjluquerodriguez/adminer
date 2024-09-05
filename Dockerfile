@@ -1,2 +1,3 @@
 FROM adminer
-RUN apk add curl
+RUN apt-get update \
+    && apt-get install -y curl 
